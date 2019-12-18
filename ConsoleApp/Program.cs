@@ -1,4 +1,4 @@
-﻿using ConsoleApp.Inheritance;
+﻿using ConsoleApp.BestPractice;
 using System;
 
 namespace ConsoleApp
@@ -7,11 +7,9 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Duck duck = new MallardDuck();
-            duck.Display();
-            duck.Quack();
-            duck.Swim();
-            duck.Fly();
+            Duck mallard = new MallardDuck();
+            mallard.PerformanceQuack();
+            mallard.PerformanceFly();
             Console.ReadKey();
         }
     }
