@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp.Inheritance;
+using System;
 
 namespace ConsoleApp
 {
@@ -6,7 +7,12 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Duck duck = new MallardDuck();
+            duck.Display();
+            duck.Quack();
+            duck.Swim();
+            duck.Fly();
+            Console.ReadKey();
         }
     }
 }
