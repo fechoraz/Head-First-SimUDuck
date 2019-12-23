@@ -10,8 +10,8 @@ namespace ConsoleApp.BestPractice
     {
         public MallardDuck()
         {
-            quackBehavior = new Quack();
-            flyBehavior = new FlyWithWings();
+            QuackBehavior = new Quack();
+            FlyBehavior = new FlyWithWings();
         }
         public override void Display()
         {

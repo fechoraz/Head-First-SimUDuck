@@ -1,5 +1,6 @@
 ﻿using ConsoleApp.BestPractice;
 using System;
+using ConsoleApp.BestPractice.FlyBehaviors;
 
 namespace ConsoleApp
 {
@@ -8,8 +9,17 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Duck mallard = new MallardDuck();
-            mallard.PerformanceQuack();
-            mallard.PerformanceFly();
+            mallard.Display();
+            mallard.PerformQuack();
+            mallard.PerformFly();
+
+
+            Duck model = new ModelDuck();
+            model.Display();
+            model.PerformFly();
+            model.FlyBehavior = new FlyRocketPowered();
+            model.PerformFly();
+
             Console.ReadKey();
         }
     }

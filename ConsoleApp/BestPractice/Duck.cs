@@ -8,30 +8,32 @@ namespace ConsoleApp.BestPractice
 {
     public abstract class Duck
     {
-        protected IFlyBehavior flyBehavior;
-        protected IQuackBehavior quackBehavior;
+        public IFlyBehavior FlyBehavior { get; set; }
+        public IQuackBehavior QuackBehavior { get; set; }
 
-        public Duck()
+        protected Duck()
         {
             
         }
+
+        public abstract void Display();
 
         public virtual void Swim()
         {
             Console.WriteLine("I'm swimming.");
         }
 
-        public void PerformanceQuack() 
+        public void PerformQuack() 
         {
-            quackBehavior.MakeQuack();
+            QuackBehavior.MakeQuack();
         }
 
-        public void PerformanceFly() 
+        public void PerformFly() 
         {
-            flyBehavior.Fly();
+            FlyBehavior.MakeFly();
         }
 
-        public abstract void Display();
+        
 
 
     }

@@ -10,8 +10,8 @@ namespace ConsoleApp.BestPractice
     {
         public RubberDuck()
         {
-            quackBehavior = new Squeak();
-            flyBehavior = new FlyNoWay();
+            QuackBehavior = new Squeak();
+            FlyBehavior = new FlyNoWay();
         }
 
         public override void Display()

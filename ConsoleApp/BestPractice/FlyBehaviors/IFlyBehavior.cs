@@ -6,6 +6,6 @@ namespace ConsoleApp.BestPractice.FlyBehaviors
 {
     public interface IFlyBehavior
     {
-        void Fly();
+        void MakeFly();
     }
 }

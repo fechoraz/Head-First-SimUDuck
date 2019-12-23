@@ -10,8 +10,8 @@ namespace ConsoleApp.BestPractice
     {
         public DecoyDuck()
         {
-            quackBehavior = new MuteQuack();
-            flyBehavior = new FlyNoWay();
+            QuackBehavior = new MuteQuack();
+            FlyBehavior = new FlyNoWay();
         }
 
         public override void Display()

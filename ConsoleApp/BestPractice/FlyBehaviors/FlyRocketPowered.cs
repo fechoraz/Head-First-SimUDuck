@@ -4,12 +4,11 @@ using System.Text;
 
 namespace ConsoleApp.BestPractice.FlyBehaviors
 {
-    public class FlyWithWings
-        : IFlyBehavior
+    public class FlyRocketPowered : IFlyBehavior
     {
         public void MakeFly()
         {
-            Console.WriteLine("I'm flying!!");
+            Console.WriteLine("I'm flying with a rocket!");
         }
     }
 }
